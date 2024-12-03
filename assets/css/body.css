@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORES */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /* PESOS */
+  --w-200: 200;
+  --w-400: 400;
+  --w-600: 600;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--Very-Light-Gray);
+  font-size: 1.1rem;
+  font-family: "Poppins";
+  font-weight: var(--w-400);
+  color: var(--Grayish-Blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1063px) {
+  .container {
+    max-width: 25rem;
+    margin: 15px;
+  }
+}
